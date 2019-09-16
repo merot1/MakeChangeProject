@@ -8,10 +8,7 @@ public class MakeChangeApp {
 		double purchase=0, payment=0, i=0;
 
 		cashTendered(purchase, payment, i);
-//		cashReturned(i);
 //		wollyWorldReceipt(purchase, payment, i);
-//		System.out.println("\n\n" + bills + " Dollar Bills");
-//		System.out.println("\n" + cents + " Coins");
 
 
 	}	
@@ -59,7 +56,6 @@ public class MakeChangeApp {
 					if (i >= 100.00 && i < 1000.00)
 					{
 						i = i / 100.00;
-
 						System.out.println("\n\nReturn: " + i + " Hundred Dollor Bill");
 					}							
 //				 $50:
@@ -88,26 +84,26 @@ public class MakeChangeApp {
 						System.out.println("\n\nReturn: " + i + " One Dollar Bill");
 					}
 //////////////////////////////////////////////////////////////////////////////////////
-					
+
 // 		      	0.25:
 					else if (i <= 0.99 && i >= 0.25) {
 						i = i / 0.25;
-						System.out.println("\n\nReturn: " + i + " Quarter"); 
+						System.out.println("\n\nReturn: " + i + " Quarters"); 
 					}
 //			 	0.10:
 					else if (i < 0.25 && i >= 0.10){
 						i = i / 0.10;
-						System.out.println("\n\nReturn: " + i + " Dime");
+						System.out.println("\n\nReturn: " + i + " Dimes");
 					}				
 //			 	0.05:
 					else if (i < 0.10 && i >= 0.05){
 						i = i / 0.05;
-						System.out.println("\n\nReturn: " + i + " Nickel");
+						System.out.println("\n\nReturn: " + i + " Nickels");
 					}
 //				0.01: 
 					else if (i < 0.05 && i > 0.00){
 						i = i / 0.01;
-						System.out.println("\n\nReturn: " + i + " Penny");
+						System.out.println("\n\nReturn: " + i + " Pennies");
 					}
 					return i;
 		}						
